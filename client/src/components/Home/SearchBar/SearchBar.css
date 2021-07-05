@@ -1,0 +1,30 @@
+.searchBar {
+    background: rgba(206, 202, 202, 0.671);;
+    border: none;
+    height: 40px;
+    border-radius: 7px;
+    outline: none;
+    font-size: 20px;
+    color: rgb(34, 33, 33);
+    padding: 2px 5px 2px 7px;
+    margin: 5px;
+}
+
+.search-btn {
+    height: 40px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(66, 65, 65);
+    color:rgba(255, 255, 255, 0.863);
+    padding: 5px 7px;
+    border-radius: 7px;
+    font-weight: 600;
+    font-size: 17px;
+    transition: background-color 1s;
+    transition: color 1s;
+}
+
+.search-btn:hover {
+    cursor: pointer;
+    background-color: rgb(161, 156, 156);
+    color: rgba(114, 111, 111, 0.863);;
+}

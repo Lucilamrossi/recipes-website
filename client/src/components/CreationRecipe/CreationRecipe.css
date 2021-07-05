@@ -1,0 +1,324 @@
+.creation {
+    background-image: url('../../img/food.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    height: 100%
+}
+
+.creation label,
+.creation p {
+    font-size: 30px;
+    padding: 0px 20px 5px 20px;
+    margin: 0;
+    color: rgb(48, 47, 47);
+    font-weight: 600;
+}
+
+.creation input,
+.creation textarea {
+    align-self: center;
+    outline: none;
+    background-color: rgba(231, 227, 227, 0.671);
+    border: transparent;
+    border-bottom: 1px rgb(54, 54, 54) solid;
+    height: 25px;
+}
+
+#create {
+    text-align: center;
+    font-size: 80px;
+    font-weight: lighter;
+    font-family: 'Pattaya', sans-serif;
+    padding: 5px;
+    margin: 5px 0 5px 40px;
+    color: rgb(32, 32, 32);
+    text-decoration: underline;
+    width: 75%;
+}
+
+.father {
+    padding-top: 90px;
+    padding-bottom: 50px;
+}
+
+.background {
+    background-color: rgba(155, 152, 152, 0.329);
+    width: 75%;
+    margin-left: 40px;
+}
+
+
+/* Upper part */
+.creation-form {
+    padding: 40px 60px 10px 60px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 250px 200px;
+    text-align: center;
+}
+
+@media (min-width: 900px) {
+    .creation-form {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100px 250px;
+    }
+}
+
+.general-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Upper part - Title */
+.creation-title {
+    margin: 10px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+@media (min-width: 900px) {
+    .creation-title {
+        grid-column-start: 1; 
+        grid-column-end: span 2; 
+    }
+}
+
+
+.creation-title input {
+    width: 90%;
+}
+
+/* Upper part - Summary */
+.creation-summary {
+    grid-row: 2;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+@media (min-width: 900px) {
+    .creation-summary {
+        grid-column-start: 1; 
+        grid-column-end: 2;
+    }
+}
+
+.creation-summary textarea {
+    height: 100%;
+    width: 100%;
+}
+
+/* Upper part - Rating and Image */
+.creation-rating-img {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.creation-rating-img input {
+    width: 53px;
+    height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Rating */
+.creation-rating {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 900px) {
+    .creation-rating {
+        text-align: center;
+    }
+}
+
+@media (min-width: 1100px) {
+    .creation-rating {
+        text-align: right;
+    }
+}
+
+/* Image */
+.creation-img span{
+    font-size: 22px;
+}
+
+.creation-img input {
+    width: 100%;
+    margin: 10px;
+    cursor: auto;
+}
+
+/* Downpart - Types, Steps and Submit */
+.creation-types-steps-submit {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px 60px 40px 60px;
+}
+
+/* Types */
+.creation-types {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    padding-top: 25px;
+    border-top: 2px rgb(246, 243, 243) solid;
+}
+
+.types-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.c-types {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px
+}
+
+.c-types div {
+    margin: 3px;
+}
+
+.c-types input {
+    width: 15px;
+}
+
+.c-types label {
+    font-size: 20px;
+}
+
+/* New Types */
+.creation-newTypes {
+    margin:5px;
+    
+}
+
+.creation-newTypes div {
+    margin: 5px;
+}
+.creation-newTypes input {
+    width: 150px;
+}
+
+/* Steps */
+.creation-steps-head {
+    margin: 15px;
+    padding-top: 25px;
+    border-top: 2px rgb(246, 243, 243) solid;
+}
+
+.steps div {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.steps span {
+    font-size: 20px;
+    margin: 0 8px;
+}
+
+.steps textarea {
+    width: 600px;
+    height: 60px;
+}
+
+.steps {
+    padding-bottom: 25px;
+    border-bottom: 2px rgb(246, 243, 243) solid;
+}
+/* Submit */
+#submit {
+    margin: 40px 10px 0 10px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(66, 65, 65);
+    color:rgba(255, 255, 255, 0.863);
+    padding: 5px;
+    border-radius: 7px;
+    font-weight: 600;
+    font-size: 30px;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    transition: 1s ease;
+    border: 2px solid transparent;
+}
+
+#submit:hover {
+    background-color: rgba(146, 143, 143, 0.863);
+    color: rgb(68, 67, 67);
+    border: 2px solid white;
+}
+
+
+/* Extra */
+.required {
+    color: red;
+}
+
+.error {
+    color: red;
+    font-size: 15px;
+}
+
+/* Recipe created */
+.created-recipe {
+    padding: 100px 30px 30px 30px;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.created-recipe div {
+    display: flex;
+    justify-content: center;
+    height: 90px;
+    margin-top: 20px;
+}
+
+#new-recipe-btn,
+#backHome {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(66, 65, 65);
+    color:rgba(255, 255, 255, 0.863);
+    padding: 5px;
+    margin: 25px;
+    border-radius: 7px;
+    font-weight: 600;
+    font-size: 30px;
+    height: 100%;
+    width: 300px;
+    cursor: pointer;
+    transition: 1s ease;
+    border: 2px solid transparent;
+    text-decoration: none;
+}
+
+#backHome {
+    height: 90px;
+    width: 300px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#new-recipe-btn:hover,
+#backHome:hover {
+    background-color: rgba(146, 143, 143, 0.863);
+    color: rgb(68, 67, 67);
+    border: 2px solid white;
+}
+
+.recipe-link-title {
+    text-decoration: none;
+    color: rgba(99, 96, 96, 0.863);
+}

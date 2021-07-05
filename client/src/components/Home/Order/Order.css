@@ -1,0 +1,21 @@
+.order {
+    background: rgba(206, 202, 202, 0.671);
+    border: none;
+    height: 40px;
+    width: 120%;
+    border-radius: 7px;
+    outline: none;
+    font-size: 20px;
+    color: rgb(34, 33, 33);
+    padding: 2px 5px 2px 5px;
+    cursor: pointer;
+    margin: 5px;
+    max-width: 200px;
+}
+
+
+.order option {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(34, 33, 33);
+    color: rgb(153, 147, 147, 0.863);
+}

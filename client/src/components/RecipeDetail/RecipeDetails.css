@@ -1,0 +1,172 @@
+.details {
+    display: flex;
+    height: 100%;
+    background-image: url('../../img/food23.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: rgba(197, 192, 192, 0.863);
+}
+
+/* Loading */
+.details-load {
+    margin-top: 30px;
+    padding: 50px;
+    color: rgba(197, 192, 192, 0.863);
+}
+
+/* Information */
+.details-info {
+    margin: 70px 50px 50px 50px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    border: 1px rgba(153, 147, 147, 0.863) solid;
+    border-radius: 20px;
+    background-color: rgba(14, 13, 13, 0.74);
+    width: 100%;
+}
+
+/* Title, summary and image */
+.title-img-summary {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+@media (min-width: 1250px) {
+    .title-img-summary {
+        display: grid;
+        grid-template-columns: 65% 35%;
+        grid-template-rows: 100% ;
+    }
+}
+
+.title-summary {
+    margin-right: 40px;
+    font-weight: 700;
+}
+
+@media (min-width: 1250px) {
+    .title-summary {
+        grid-row: 1;
+    }
+}
+
+.details-title {
+    font-size: 70px;
+    margin: 0;
+}
+
+.details-summary {
+    font-size: 25px;
+}
+
+.details-img {
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+    align-self: center;
+}
+
+@media (min-width: 1250px) {
+    .details-img {
+        grid-column: 2;
+    }
+}
+
+/* Ratings, types and steps */
+.ratings-types-steps {
+    border: 1px rgba(153, 147, 147, 0.863) solid;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(5, 5, 5, 0.486);
+    margin: 15px 0;
+}
+
+.types-ratings {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+@media (min-width: 720px) {
+    .types-ratings {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+}
+
+/* Types */
+.details-types {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.details-types p {
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 3px;
+    margin-bottom: 15px;
+}
+
+.details-types span {
+    font-size: 20px;
+    padding: 3px;
+}
+
+.type {
+    text-transform: capitalize;
+}
+
+/* Ratings */
+.details-rating {
+    background-color: rgba(5, 5, 5, 0.486);
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 720px) {
+    .details-rating {
+        height: 110px;
+    }
+}
+
+.details-rating p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.details-rating span {
+    font-weight: 600;
+}
+
+/* Steps */
+.details-steps p {
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 3px;
+    margin-bottom: 15px;
+}
+
+.details-steps span {
+    font-size: 20px;
+}
+
+/* Error */
+#error {
+    font-size: 100px;
+    padding: 40px;
+    margin: 90px 50px;
+    height: 100%;
+    width: 100%;
+    color: rgba(153, 147, 147, 0.863);
+    background-color: rgba(14, 13, 13, 0.74);
+    border-radius: 30px;
+}

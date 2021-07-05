@@ -1,0 +1,87 @@
+.rating-filter {
+    border-radius: 15px;
+    margin: 20px 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 19px;
+    font-weight: 700;
+    padding: 25px 25px 15px 25px;
+    color: rgba(107, 103, 103, 0.863);
+    border: 2px solid rgba(153, 147, 147, 0.863);
+    justify-content: center;
+}
+
+.rating-filter label {
+    background-color: rgba(255, 255, 255, 0.651);
+    border-radius: 5px;
+    padding: 4px;
+    color: rgb(20, 20, 20)
+}
+
+.rating-filter-top,
+.rating-filter-bottom {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+@media (min-width: 1000px) {
+    .rating-filter-top {
+        margin-bottom: 20px;
+    }
+}
+
+.rating-filter-top div,
+.rating-filter-bottom div {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (min-width: 1000px) {
+    .rating-filter-top div,
+    .rating-filter-bottom div {
+        display: unset;
+        padding: 10px;
+    }
+}
+
+.rating-filter span {
+    font-size: 13px;
+    font-weight: 800;
+    align-self: center;
+}
+
+.rating-filter-box {
+    height: 20px;
+    width: 40px;
+    margin: 10px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid rgba(153, 147, 147, 0.863);
+    color: rgba(153, 147, 147, 0.863);
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+}
+
+.rating-filter-error {
+    font-size: 14px;
+    padding: 8px 0 0 0;
+    text-align: center;
+    color: red;
+}
+
+.btn-container {
+    margin: 0;
+}
+
+@media (min-width: 1000px) {
+    .btn-container {
+        margin-top: 10px;
+    }
+}
