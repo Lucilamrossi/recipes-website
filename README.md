@@ -1,9 +1,15 @@
 # recipes-website
 
-## Introduction
+## Introduction and tecnologies
 
-> In this website you will be able to search for recipes using multiple filters and you can alsocreate your own recipes! This webSite was made by Lucila Rossi as an assigment at soyHenry's bootcamp
+> In this website you will be able to search for recipes using multiple filters and you can also create your own recipes! This webSite was made entirely by Lucila Rossi as an assigment at soyHenry's bootcamp.
+> The frontEnd was made with React-Redux.
+> The styles were made with pure css as an opportunity to practice this skills.
+> The backEnd was made in Node.js with Express.
+> This website gets information from an external API and combines this data with a postgress database.
 
+## Check out the video!
+> <a href="https://vimeo.com/572383679" target="blank"> Click here!</a>
 
 ## Installation
 
@@ -30,7 +36,6 @@ API_KEY_NUMBER=**apiKey nummber that you got on step 4**
 8. Run "npm start" inside client folder and enjoy the web!
 
 ## Some previews!
-> Check the<a href="https://vimeo.com/572383679" target="blank"> video!</a>
 
 1. Landing page
 > Full-Screen version:
