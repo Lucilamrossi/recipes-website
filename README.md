@@ -40,7 +40,7 @@ API_KEY_NUMBER=**apiKey nummber that you got on step 4**
 
 > Mobile version:
 <p align="center">
-  <img src="./img/landingMobile.jpg" alt="Image" />
+  <img src="./img/landingMobile1.jpg" alt="Image" />
 </p>
 
 2. Home page
