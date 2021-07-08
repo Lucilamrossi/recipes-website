@@ -41,6 +41,15 @@
 .father {
     padding-top: 90px;
     padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 900px) {
+    .father {
+        align-items: flex-start;
+    }
 }
 
 .background {

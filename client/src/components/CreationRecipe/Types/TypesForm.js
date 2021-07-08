@@ -10,11 +10,16 @@ export function TypesForm ({  types, handleTypesCallBack }) {
 
   //Types Handlers:
   const handleTypesChange = (event) => {
-    if(event.target.checked) {
-        setSelectedTypes([...selectedTypes, event.target.value]);
-    } else setSelectedTypes(selectedTypes.filter(type => type !== event.target.value));
+    let updatedSelectedTypes;
 
-    handleTypesCallBack(selectedTypes, createdTypes)
+    if(event.target.checked) {
+      updatedSelectedTypes = [...selectedTypes, event.target.value]
+        
+    } else {
+      updatedSelectedTypes = selectedTypes.filter(type => type !== event.target.value);
+    };
+    setSelectedTypes(updatedSelectedTypes);
+    handleTypesCallBack(updatedSelectedTypes, createdTypes)
   };
 
   const handleCreatedType = (event) => {
@@ -23,15 +28,16 @@ export function TypesForm ({  types, handleTypesCallBack }) {
     });
     setCreatedTypes(updatedTypes);
 
-    handleTypesCallBack(selectedTypes, createdTypes)
+    handleTypesCallBack(selectedTypes, updatedTypes)
   };
 
   const handleRemoveType = (event) => {
-    setCreatedTypes(createdTypes.filter((type, i) => {
+    const updatedTypes = createdTypes.filter((type, i) => {
         return i !== Number(event.target.id);
-    }));
+    });
 
-    handleTypesCallBack(selectedTypes, createdTypes)
+    setCreatedTypes(updatedTypes);
+    handleTypesCallBack(selectedTypes, updatedTypes)
   };
 
   const handlerAddTypes = () => {

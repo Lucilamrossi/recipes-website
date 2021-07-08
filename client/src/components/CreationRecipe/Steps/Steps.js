@@ -9,20 +9,22 @@ export function Steps ({ handleStepsCallBack }) {
 
     // Steps Handlers:
     const handleNewSteps = () => {
-        setSteps([...steps,  '']);
-        handleStepsCallBack(steps)
+        const updatedSteps = [...steps,  '']
+        setSteps(updatedSteps);
+        handleStepsCallBack(updatedSteps)
     }
     
     const handleStepsChange = (event) => {
-        steps[Number(event.target.id)] = event.target.value;
-        handleStepsCallBack(steps)
+        const updatedSteps = [...steps, steps[Number(event.target.id)] = event.target.value]     
+        handleStepsCallBack(updatedSteps)
+
     };
     
     const handleStepsRemove = () => {
-        const updatedStep = [...steps];
-        updatedStep.pop();
-        setSteps(updatedStep);
-        handleStepsCallBack(steps)
+        steps.pop();
+        const updatedSteps = [...steps];
+        setSteps(updatedSteps);
+        handleStepsCallBack(updatedSteps)
     };
     
     return (
